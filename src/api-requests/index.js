@@ -15,6 +15,17 @@ export const signInUser = async (data) => await axios({
   .then((res) => res)
   .catch((err) => err.response);
 
+export const logInUser = async (data) => await axios({
+  url: `${URL}/authentication`,
+  data: JSON.stringify(data),
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+})
+  .then((res) => res)
+  .catch((err) => err.response);
+
 export const saveToken = (data) => {
   const NOW = Date.now();
   const tokenObj = {

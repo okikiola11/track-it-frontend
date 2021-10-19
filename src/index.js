@@ -9,7 +9,7 @@ import Routes from './routes';
 import './index.css';
 
 ReactDOM.render(
-  <Grid container direction="row" justify="center" alignItems="center">
+  <Grid container direction="row" justifyContent="center" alignItems="center">
     <Grid item md={2} />
     <Grid
       item
@@ -18,7 +18,7 @@ ReactDOM.render(
       lg={6}
       container
       direction="column"
-      justify="center"
+      justifyContent="center"
       alignItems="center"
       className="mainApp"
     >
