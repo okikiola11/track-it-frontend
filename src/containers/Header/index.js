@@ -46,7 +46,7 @@ function Header({ userData }) {
             <img className="logo" src={logo} alt="Logo" />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            TrackLife
+            TRACKIT
           </Typography>
           {checkToken() && (
             <div>
