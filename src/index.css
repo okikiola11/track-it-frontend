@@ -15,8 +15,6 @@ code {
 .mainApp {
   border: 10px solid black;
   border-radius: 10px;
-
-  /* min-height: 80vh; */
   margin-top: 5vh;
 }
 
@@ -27,7 +25,7 @@ code {
 }
 
 .submit {
-  background-color: #addc91 !important;
+  background-color: #D72483 !important;
   border: none;
 }
 
@@ -38,9 +36,5 @@ code {
 }
 
 .blue {
-  background-color: #62b5e5 !important;
+  background-color: #D72483 !important;
 }
-
-/* 67899c
-62b5e5
-addc91 */

@@ -10,7 +10,7 @@ This project works alongside the [backend repo](https://github.com/okikiola11/tr
 - The project is deployed accessible online
 - Implemented 2 nice-to-have requirements: user authentication from the front-end to the server and a panel to create / update / delete things to measure;
 
-![screenshot](./src/images/img1.png)
+![screenshot](./src/images/screenshot1.png)
 ![screenshot](./src/images/img2.png)
 
 ## About

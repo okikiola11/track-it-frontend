@@ -9,7 +9,7 @@ import ExitToApp from "@material-ui/icons/ExitToApp";
 import { connect } from "react-redux";
 import { userData } from "../../redux/actions";
 import "./index.css";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo.jpg";
 
 import { useHistory } from "react-router";
 import { checkToken, signOut } from "../../api-requests";
