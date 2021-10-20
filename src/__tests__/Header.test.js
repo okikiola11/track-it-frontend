@@ -14,7 +14,7 @@ describe("Routes", () => {
         </Router>
       </Provider>
     );
-    expect(screen.getByText("TrackLife")).toBeInTheDocument();
+    expect(screen.getByText("TRACKIT")).toBeInTheDocument();
   });
   it("Should not show user if logged out", () => {
     render(

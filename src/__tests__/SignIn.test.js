@@ -9,9 +9,9 @@ import { userData } from "../redux/actions";
 import { saveToken, signInUser } from "../api-requests";
 import jwt from "jwt-decode";
 
-const num = Math.floor(Math.random() * 5000);
-const random_name = num.toString();
-const random_email = num.toString() + "@gmail.com";
+const num = 'okiki';
+const random_name = num;
+const random_email = num + "@gmail.com";
 const userPassword = "123123";
 
 const clearStorage = () => {
