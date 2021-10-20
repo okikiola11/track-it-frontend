@@ -1,20 +1,21 @@
-import { useState } from 'react';
-import { connect } from 'react-redux';
-import { useHistory, Link } from 'react-router-dom';
-import Form from 'react-bootstrap/Form';
-import { Modal, Button } from 'react-bootstrap';
-import { logInUser, saveToken } from '../api-requests';
-import { userData } from '../redux/actions';
-import store from '../redux/store';
+import { useState } from "react";
+import { connect } from "react-redux";
+import { useHistory } from "react-router-dom";
+import { logInUser, saveToken } from "../api-requests";
+import Form from "react-bootstrap/Form";
+import { Link } from "react-router-dom";
+import { Modal, Button } from "react-bootstrap";
+import { userData } from "../redux/actions";
+import store from "../redux/store";
 
 const LogIn = () => {
   const [show, setShow] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
   const handleClose = () => setShow(false);
   const [state, setState] = useState({
-    email: '',
-    password: '',
+    email: "",
+    password: "",
   });
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -29,17 +30,17 @@ const LogIn = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = await logInUser(state);
-    if (data.statusText === 'OK') {
+    if (data.statusText === "OK") {
       saveToken(data);
       store.dispatch(
         userData({
-          isLoggedIn: localStorage.getItem('isLoggedIn') === 'true',
-          userToken: JSON.parse(localStorage.getItem('tokenObj')),
-          userInfo: localStorage.getItem('userInfo'),
-          userId: JSON.parse(localStorage.getItem('userId')),
-        }),
+          isLoggedIn: localStorage.getItem("isLoggedIn") === "true",
+          userToken: JSON.parse(localStorage.getItem("tokenObj")),
+          userInfo: localStorage.getItem("userInfo"),
+          userId: JSON.parse(localStorage.getItem("userId")),
+        })
       );
-      history.push('/');
+      history.push("/");
     } else {
       setShow(true);
       setError(data.data.message);
@@ -85,8 +86,8 @@ const LogIn = () => {
         <Button className="submit" type="submit">
           Log in
         </Button>
-        <Link to={{ pathname: '/signin' }}>
-          <p className="mt-4"> Don&apos;t have an account? Sign Up here!</p>
+        <Link to={{ pathname: "/signin" }}>
+          <p className="mt-4"> Don't have an account? Sign Up here!</p>
         </Link>
       </Form>
     </div>

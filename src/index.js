@@ -1,16 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
-import { Grid } from '@material-ui/core';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import store from './redux/store';
-import Routes from './routes';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
+import { Grid } from "@material-ui/core";
+import "bootstrap/dist/css/bootstrap.min.css";
+import store from "./redux/store";
+import Routes from "./routes";
+import "./index.css";
 
 ReactDOM.render(
-  <Grid container direction="row" justifyContent="center" alignItems="center">
-    <Grid item md={2} />
+  <Grid container direction="row" justify="center" alignItems="center">
+    <Grid item md={2}></Grid>
     <Grid
       item
       sm={8}
@@ -18,7 +18,7 @@ ReactDOM.render(
       lg={6}
       container
       direction="column"
-      justifyContent="center"
+      justify="center"
       alignItems="center"
       className="mainApp"
     >
@@ -29,7 +29,7 @@ ReactDOM.render(
       </Provider>
     </Grid>
 
-    <Grid item md={2} />
+    <Grid item md={2}></Grid>
   </Grid>,
-  document.getElementById('root'),
+  document.getElementById("root")
 );

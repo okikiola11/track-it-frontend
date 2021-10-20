@@ -1,21 +1,21 @@
-import { useState } from 'react';
-import { useHistory, Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import Form from 'react-bootstrap/Form';
-import { Modal, Button } from 'react-bootstrap';
-import { saveToken, signInUser } from '../api-requests';
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
+import { connect } from "react-redux";
+import { saveToken, signInUser } from "../api-requests";
+import Form from "react-bootstrap/Form";
+import { Modal, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
-  const history = useHistory();
   const [show, setShow] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
   const handleClose = () => setShow(false);
   const [signIn, setSignIn] = useState({
-    name: '',
-    email: '',
-    password: '',
-    password_confirmation: '',
+    name: "",
+    email: "",
+    password: "",
+    password_confirmation: "",
   });
 
   const handleChange = (e) => {
@@ -26,12 +26,14 @@ const SignIn = () => {
     }));
   };
 
+  const history = useHistory();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = await signInUser(signIn);
-    if (data.statusText === 'Created') {
+    if (data.statusText === "Created") {
       saveToken(data);
-      history.push('/');
+      history.push("/");
     } else {
       setShow(true);
       setError(data.data.message);
