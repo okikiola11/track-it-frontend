@@ -8,7 +8,7 @@ import MeasureForm from './MeasureForm';
 const Training = () => {
   const { id } = useParams();
   localStorage.setItem('id', id);
-  const measureURL = `http://localhost:3000/trainings/${id}`;
+  const measureURL = `https://fast-escarpment-73067.herokuapp.com/trainings/${id}`;
   const dispatch = useDispatch();
 
   const fetchTraining = async () => {

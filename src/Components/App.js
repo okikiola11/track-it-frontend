@@ -5,8 +5,8 @@ import { getUsers } from '../Actions/user';
 
 const App = () => {
   const storedUser = useSelector((state) => state);
-  const logoutURL = 'http://localhost:3000/logout';
-  const loggedInURL = 'http://localhost:3000/logged_in';
+  const logoutURL = 'https://fast-escarpment-73067.herokuapp.com/logout';
+  const loggedInURL = 'https://fast-escarpment-73067.herokuapp.com/logged_in';
   const dispatch = useDispatch();
 
   const fetchLoggedInUser = async () => {

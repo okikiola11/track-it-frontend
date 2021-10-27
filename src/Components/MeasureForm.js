@@ -6,7 +6,7 @@ const MeasureForm = () => {
   const [time, setTime] = useState(0);
   const [count, setCount] = useState(0); // eslint-disable-next-line
   const training_id = localStorage.getItem('id');
-  const measureURL = 'http://localhost:3000/create/measure';
+  const measureURL = 'https://fast-escarpment-73067.herokuapp.com/create/measure';
   const history = useHistory();
 
   const createMeasure = async () => {

@@ -6,7 +6,7 @@ import { getUsers } from '../Actions/user';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const loginURL = 'http://localhost:3000/login';
+  const loginURL = 'https://fast-escarpment-73067.herokuapp.com/login';
   const history = useHistory();
   const dispatch = useDispatch();
 

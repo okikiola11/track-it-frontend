@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 
 const TrainingForm = () => {
   const [name, setName] = useState('');
-  const trainingURL = 'http://localhost:3000/create/training';
+  const trainingURL = 'https://fast-escarpment-73067.herokuapp.com/create/training';
   const history = useHistory();
 
   const createTraining = async () => {
