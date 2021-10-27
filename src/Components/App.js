@@ -43,7 +43,7 @@ const App = () => {
     if (storedUser.userReducer.logged_in === true) {
       return (
         <div>
-          <button type="button" onClick={onClick}><i className="fas fa-sign-out-alt" /></button>
+          <button type="button" onClick={onClick}><i className="fas fa-sign-out-alt" aria-label="Sign out" /></button>
           <h6>Logout</h6>
         </div>
       );
