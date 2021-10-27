@@ -21,7 +21,7 @@ The projects consists of a tracking-app used to measure any routine you intend t
 
 ## Live Demo
 
-## [LiveVersion](https://radiant-garden-72250.herokuapp.com/)
+## [LiveVersion](https://trackit-app-react.herokuapp.com/)
 
 ## Built With
 
