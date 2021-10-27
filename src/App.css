@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Vollkorn', serif;
   font-size: 0.9rem;
   color: #acafb4;
 }
@@ -39,7 +41,7 @@ button {
   text-align: center;
   margin: 1rem auto;
   color: #fff;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .link-list {
@@ -68,13 +70,14 @@ button {
 form {
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-bottom: 3rem;
 }
 
 input {
-  padding: 1rem 0;
+  padding: 1rem;
   margin: 1rem 0;
-  border: 0;
 }
 
 input:focus {
@@ -88,6 +91,7 @@ input:focus {
   margin: 1rem 0;
   color: #fff;
   font-weight: bold;
+  width: 25%;
 }
 
 footer {
@@ -103,6 +107,7 @@ footer {
   align-items: center;
   align-content: center;
   background-color: #313944;
+  padding: 5px 0;
 }
 
 .footer-list li {
@@ -111,7 +116,8 @@ footer {
 }
 
 .footer-list li:hover {
-  background-color: #42b5e8;
+  font-size: large;
+  transition: .4s;
 }
 
 .footer-list li div {
@@ -122,8 +128,12 @@ footer {
   text-align: center;
 }
 
+.footer-list li div i {
+  font-size: 3rem;
+}
+
 .footer-list li div h6 {
-  font-size: 0.7rem;
+  font-size: 1.9rem;
   margin: 0.2rem 0;
   text-align: center;
 }
@@ -173,18 +183,17 @@ footer {
 }
 
 .measure-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-gap: 5px;
   padding: 1rem;
   text-align: center;
-  background-color: #acafb4;
+  background-color: #fff;
 }
 
 .measure-show {
-  background-color: #fff;
   padding: 1rem;
+  margin-bottom: 5px;
   border-radius: 5px;
+  border: 1px solid #acafb4;
 }
 
 .single-measure {

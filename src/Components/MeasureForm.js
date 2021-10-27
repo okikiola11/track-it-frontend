@@ -62,7 +62,7 @@ const MeasureForm = () => {
       </div>
       <form onSubmit={onSubmit}>
         <input id="timer" type="number" name="time" onChange={(e) => setTime(e.target.value)} hidden />
-        <input type="number" name="count" onChange={(e) => setCount(e.target.value)} placeholder="How many counts?" />
+        <input type="number" name="count" onChange={(e) => setCount(e.target.value)} placeholder="Track the number of counts" />
         <button type="submit" className="submit-btn">SUBMIT</button>
       </form>
     </div>

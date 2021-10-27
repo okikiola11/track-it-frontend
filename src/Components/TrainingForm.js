@@ -32,7 +32,7 @@ const TrainingForm = () => {
   return (
     <div>
       <form onSubmit={onSubmit}>
-        <input type="text" name="name" onChange={(e) => setName(e.target.value)} placeholder="What's your training!" />
+        <input type="text" name="name" onChange={(e) => setName(e.target.value)} placeholder="What do you want to track!" />
         <button type="submit" className="submit-btn">SUBMIT</button>
       </form>
     </div>

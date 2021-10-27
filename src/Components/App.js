@@ -50,8 +50,10 @@ const App = () => {
     }
     return (
       <div>
-        <a href="/login"><i className="fas fa-sign-out-alt" /></a>
-        <h6>Login</h6>
+        <a href="/login">
+          <i className="fas fa-sign-out-alt" />
+          <h6>Login</h6>
+        </a>
       </div>
     );
   };
@@ -60,21 +62,25 @@ const App = () => {
     <div className="App">
       <header>
         <nav>
-          <h2 className="app-text">Your Measures</h2>
+          <h2 className="app-text">TRACKIT</h2>
         </nav>
       </header>
       <footer>
         <ul className="footer-list">
           <li>
             <div>
-              <a href="/create/training"><i className="fas fa-plus-square" /></a>
-              <h6>Add</h6>
+              <a href="/create/training">
+                <i className="fas fa-plus-square" />
+                <h6>Add</h6>
+              </a>
             </div>
           </li>
           <li>
             <div>
-              <a href="/all/trainings"><i className="fas fa-chart-pie" /></a>
-              <h6>All</h6>
+              <a href="/all/trainings">
+                <i className="fas fa-chart-pie" />
+                <h6>Track.it</h6>
+              </a>
             </div>
           </li>
           <li>
@@ -82,8 +88,10 @@ const App = () => {
           </li>
           <li>
             <div>
-              <a href="/create/training"><i className="fas fa-ellipsis-h" /></a>
-              <h6>More</h6>
+              <a href="/create/training">
+                <i className="fas fa-ellipsis-h" />
+                <h6>More</h6>
+              </a>
             </div>
           </li>
         </ul>
