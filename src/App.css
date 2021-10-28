@@ -117,7 +117,7 @@ footer {
 
 .footer-list li:hover {
   font-size: large;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .footer-list li div {
